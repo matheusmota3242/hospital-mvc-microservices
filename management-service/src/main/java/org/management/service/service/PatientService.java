@@ -32,7 +32,7 @@ public class PatientService {
 	private static final String INPATIENT_UNIT_URL = "http://inpatient-unit-service";
 	
 	private static final String PATIENT_NOT_FOUND_MESSAGE = "Não existe paciente correspondente ao 'id' passado.";
-	private static final String TRANSFER_EXCEPTION_MESSAGE = "Ocorreu um problema ao tentar chamar o serviço de UTI.";
+	private static final String TRANSFER_EXCEPTION_MESSAGE = "Ocorreu um problema ao tentar chamar o serviço solicitado.";
 	
 	public Patient save(Patient patient) {
 		patient.getRecords().add(new ActionRecord(TypeAction.CHECKIN));

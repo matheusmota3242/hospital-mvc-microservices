@@ -25,7 +25,7 @@ public abstract class Internment implements Serializable {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private Integer id;
 	
-	@Column(unique = true)
+	@Column(unique = false)
 	@NotNull(message = "The field 'patientId' is mandatory.")
 	private Integer patientId;
 	

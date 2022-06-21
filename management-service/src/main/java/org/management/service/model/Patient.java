@@ -39,7 +39,7 @@ public class Patient implements Serializable {
 	@NotNull(message = "The 'firstName' field is mandatory.")
 	private Integer age;
 
-	@Column(unique = true)
+	@Column(unique = false)
 	@Pattern(regexp = "([0-9]{2}[\\.]?[0-9]{3}[\\.]?[0-9]{3}[\\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\\.]?[0-9]{3}[\\.]?[0-9]{3}[-]?[0-9]{2})", message = "Invalid CPF!")
 	private String cpf;
 
